@@ -1,5 +1,5 @@
 import { Component, Input, HostListener, Inject } from '@angular/core';
-import { ServiceService } from './student-service.service';
+import { StudentService } from './student.service';
 import { NgForm } from '@angular/forms';
 
 
@@ -12,7 +12,7 @@ export class AppComponent {
 
   title = 'Chetan Practice';
 
-  constructor(@Inject(ServiceService) serviceService) {
+  constructor(@Inject(StudentService) serviceService) {
     console.log(serviceService);
    // console.log('Hi I am component');
   }
