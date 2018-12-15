@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="head-text"><img class="ng-logo" src="assets/img/logo/ng.png"></div>
+  <div class="container">
+    <div class="row">
+      <div class="form-bg">
+          <br/>
+          <form #regForm='ngForm' (ngSubmit)="Register(regForm)" >
+            <h2 class="text-center">Registration Form</h2>
+          <br/>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="First Name" name="firstname" required ngModel>
+          </div>
+        <br/>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Last Name" name="lastname" required ngModel>
+        </div>
+      <br/>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Email ID" name="email" email required ngModel #email="ngModel">
+        <span class="help-bpx" *ngIf="email.touched && !email.valid">Please Enter valid Email!!</span>
+      </div>
+    <br/>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Phone Number" name="phone" phone required
+       ngModel>
+       <span class="help-bpx" *ngIf="email.touched && !email.valid">Please Enter Mobile Number!!</span>
+    </div>
+  <br/>
+  <div class="align-center">
+    <button type="submit" class="btn btn-primary" id="register" [disabled]="!regForm.valid">Register</button>
+  </div>
+   </form>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a routerLink="create" routerLinkActive="active">
+            Add coins
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+
