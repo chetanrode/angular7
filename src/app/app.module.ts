@@ -10,7 +10,8 @@ import { EditComponent } from './edit/edit.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routerConfig';
 import { IndexComponent } from './index/index.component';
-
+import { ParentComponent } from './parent/parent.component';
+import { StudentportalModule } from './studentportal/studentportal.module';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,15 @@ import { IndexComponent } from './index/index.component';
     StudentComponent,
     CreateComponent,
     EditComponent,
-    IndexComponent
+    IndexComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    StudentportalModule
   ],
   providers: [StudentService],
   bootstrap: [AppComponent]

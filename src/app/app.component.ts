@@ -28,7 +28,7 @@ export class AppComponent {
 
   @HostListener('click', ['$event'])
     onhostclick(event: Event) {
-     // alert('This is hostlistner Method decoratorng !! ');
+    //  alert('This is hostlistner Method decoratorng !! ');
     }
 
     Register(regForm: NgForm) {
