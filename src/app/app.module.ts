@@ -12,6 +12,7 @@ import { appRoutes } from './routerConfig';
 import { IndexComponent } from './index/index.component';
 import { ParentComponent } from './parent/parent.component';
 import { StudentportalModule } from './studentportal/studentportal.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StudentportalModule } from './studentportal/studentportal.module';
     CreateComponent,
     EditComponent,
     IndexComponent,
-    ParentComponent
+    ParentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
