@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
-import { StudentServiceService } from './student-service.service';
+import { StudentService } from './student.service';
 import { FormsModule } from '@angular/forms';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
@@ -26,7 +26,7 @@ import { IndexComponent } from './index/index.component';
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [StudentServiceService],
+  providers: [StudentService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
