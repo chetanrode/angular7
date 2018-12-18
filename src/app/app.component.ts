@@ -12,17 +12,23 @@ export class AppComponent {
 
   title = 'Chetan Practice';
 
+  inputvariable: String = 'Hi I am Parent';
+
+
   constructor(@Inject(StudentService) serviceService) {
-   // console.log(serviceService);
-    console.log('Hi I am component');
+    console.log(serviceService);
+   // console.log('Hi I am component');
+  }
+  getdata(value) {
+    console.log(value);
   }
 
-  @Input()
-  studentProperty: string;
+  /*@Input()
+  studentProperty: string;*/
 
   @HostListener('click', ['$event'])
     onhostclick(event: Event) {
-     // alert('This is hostlistner Method decoratorng !! ');
+    //  alert('This is hostlistner Method decoratorng !! ');
     }
 
     Register(regForm: NgForm) {
@@ -34,5 +40,6 @@ export class AppComponent {
         console.log(lastname);
         console.log(mail);
         console.log(phonenum);
-  }
+
+}
 }

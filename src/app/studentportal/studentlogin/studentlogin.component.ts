@@ -10,7 +10,6 @@ export class StudentComponent implements OnInit {
   @Output() myoutput: EventEmitter<string> = new EventEmitter();
   outputstring = 'Hi I am your child';
   constructor() { }
-  
   ngOnInit() {
     console.log(this.myinput);
   }
