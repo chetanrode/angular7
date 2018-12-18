@@ -1,0 +1,16 @@
+
+=========Hello Freinds ==========
+This my Angular 5 and 7 practice working repository.
+If you want this setup so please make it as clone or you can download this as .zip.
+But after this process you have to install node_modules for libraries.
+Make sure if you know how to install updated node_modules.
+If you dont have an any idea then just run below commands.
+
+
+for global install
+
+npm install -g node-modules
+
+For more please hit below URL.
+
+https://www.npmjs.com/package/node-modules
